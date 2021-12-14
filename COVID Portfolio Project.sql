@@ -154,6 +154,6 @@ AS
   WHERE  dea.continent IS NOT NULL
 
 SELECT *,
-         (rolling_total_vaccinated/population)*100 as Rolling_Total_Percent
+       (rolling_total_vaccinated/population)*100 as Rolling_Total_Percent
 FROM PercentPopulationVaccinated
 WHERE location like '%united s%' 
